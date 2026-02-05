@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools >= 77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "narou"
+description = "An API wrapper for Shōsetsuka ni Narō."
+version = "0.1.0"
+dependencies = ["httpx==0.28.1", "defusedxml==0.7.1"]
+requires-python = ">=3.12"
+readme = "README.md"
+keywords = ["api", "novel", "library", "wrapper"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3"
+]
+license-files = ["LICENSE"]
+
+[[project.authors]]
+name = "Kai Tomotake"
+email = "kaitomotake@gmail.com"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["narou"]
